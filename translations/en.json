@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Metadata Writer",
+    "short_description": "The ticket's metadata will be part of the comment.",
+    "long_description": "The ticket's metadata will be part of the comment.",
+    "installation_instructions": "Simply click install."
+  }
+}
