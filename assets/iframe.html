@@ -20,7 +20,8 @@
   function(response) {
     let browserClient  = response.responseJSON.comments[0].metadata.system.client;
     let ip = response.responseJSON.comments[0].metadata.system.ip_address;
-   client.invoke('comment.appendHtml', `Browser Client: ${browserClient} <br> IP address ${ip}`)
+    let location = response.responseJSON.comments[0].metadata.system.location;
+   client.invoke('comment.appendHtml', `Browser Client: ${browserClient} <br> IP Address: ${ip} <br> Location: ${location}`)
   },
   function(response) {
     console.error(response.responseText);
